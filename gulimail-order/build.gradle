@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+version 'unspecified'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project(':gulimail-common')
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    compile group: 'org.apache.shiro', name: 'shiro-spring', version: '1.5.3'
+    compile 'com.alibaba:druid-spring-boot-starter:1.1.13'
+}
