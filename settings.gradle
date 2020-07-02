@@ -1,4 +1,5 @@
 rootProject.name = 'gulimail'
 include 'gulimail-order'
 include 'gulimail-common'
+include 'gulimail-es'
 

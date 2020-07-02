@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+version 'unspecified'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+// 由于加了springboot版本依赖管理，springboot默认elasticsearch版本为6.8.7，此处为覆盖springboot中的es版本，因为docker es镜像为7.4.2
+ext['elasticsearch.version'] = '7.4.2'
+
+dependencies {
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.2.RELEASE'
+    compile project(':gulimail-common')
+    compile group: 'org.elasticsearch.client', name: 'elasticsearch-rest-high-level-client', version: '7.4.2'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    compile 'com.alibaba:druid-spring-boot-starter:1.1.13'
+
+}

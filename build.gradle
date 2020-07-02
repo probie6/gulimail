@@ -1,12 +1,12 @@
 buildscript {
     repositories {
-        // ä¼˜å…ˆä½¿ç”¨å›½å†…æº
+        // ÓÅÏÈÊ¹ÓÃ¹úÄÚÔ´
         maven {
             url 'https://maven.aliyun.com/repository/public'
         }
     }
     dependencies {
-        // è®©spring-bootæ”¯æŒgradle å¦åˆ™plugin: 'io.spring.dependency-management'ä¼šæŠ¥é”™
+        // ÈÃspring-bootÖ§³Ögradle ·ñÔòplugin: 'io.spring.dependency-management'»á±¨´í
         classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.1.RELEASE")
     }
 }
@@ -30,7 +30,7 @@ subprojects {
     }
 
     repositories {
-        // ä½¿ç”¨å›½å†…çš„æº
+        // Ê¹ÓÃ¹úÄÚµÄÔ´
         maven { url 'https://maven.aliyun.com/repository/public' }
     }
     dependencies {
